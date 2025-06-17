@@ -2,23 +2,25 @@
 
 ![Banner](https://your-screenshot-link.com/banner.png)
 
-> 💼 A dynamic and responsive **SAPUI5 CRUD** (Create, Read, Update, Delete) application built from scratch — designed to showcase **UI/UX elegance**, **flexible architecture**, and **real-world functionality** using **SAP Fiori** principles.
+>  A dynamic and responsive **SAPUI5 CRUD** (Create, Read, Update, Delete) application built from scratch — designed to showcase **UI/UX elegance**, **flexible architecture**, and **real-world functionality** using **SAP Fiori** principles.
 
 ---
 
 ## 📌 Live Demo
 
-🚀 **[Click here to try it live on Netlify](https://685105db4d2d82403c3f7306--regal-dasik-83da39.netlify.app/)**
+ **[Click here to try it live on Netlify](https://685105db4d2d82403c3f7306--regal-dasik-83da39.netlify.app/)**
 
 ---
 
 ## 📸 Preview
-
+>In Bright Mode
 ![Live App Screenshot](https://github.com/user-attachments/assets/2f13f89e-3b23-4ede-a60e-2ef742b2ebaf)
+>In Dark Mode
+![Live App Screenshot](https://github.com/user-attachments/assets/27c67ce4-ab74-4872-ad25-140c2fbf41ad)
 
 ---
 
-## ✨ Features That Set This App Apart
+## Features That Set This App Apart
 
 ✅ **Clean, Card-Based UI**  
 ✅ **Responsive Layout (Flexbox + Grid)**  
@@ -32,7 +34,7 @@
 
 ---
 
-## 🧠 What You'll Learn From This Project
+## What You'll Learn From This Project
 
 - Building an **SAPUI5 app from scratch**
 - Applying **MVC architecture**
@@ -44,7 +46,7 @@
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Technology | Description |
 |------------|-------------|
