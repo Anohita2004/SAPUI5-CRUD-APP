@@ -1,0 +1,218 @@
+/* ========== GLOBAL STYLES ========== */
+.sapMPage {
+  padding: 1rem;
+  background: linear-gradient(to bottom right, #fefefe, #e8f0ff);
+  font-family: 'Segoe UI', 'Open Sans', sans-serif;
+  color: #2c3e50;
+  animation: fadeInBody 1s ease-out forwards;
+}
+.inputForm .sapMInputBase {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.inputSpacing {
+    margin-left: 8px;
+    margin-bottom: 12px;
+}
+.labelSpacing {
+    margin-left: 12px;
+    margin-bottom: 1px;
+}
+
+
+
+@keyframes fadeInBody {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== TOGGLE BUTTON ========== */
+.sapMToggleBtn {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-weight: bold;
+  color: #007aff;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.sapMToggleBtn:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ========== INPUT FIELD ========== */
+input.sapMInputBaseInner {
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #d0d0d0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.sapMInputBaseInner:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 4px rgba(0, 122, 255, 0.4);
+}
+
+/* ========== BUTTON ========== */
+.sapMBar-CTX .sapMBtn {
+  margin: 0 6px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.sapMBar-CTX .sapMBtn:hover {
+  transform: scale(1.08);
+  background-color: #dbeeff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sapMBtnInner {
+  background-color: #ffffff;
+  color: #007aff;
+}
+
+/* ========== SEARCH & SORT CONTAINER ========== */
+.sapMHBox {
+  margin-top: 2rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sapMSF {
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.2rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== CARD STYLES ========== */
+.customCardList {
+  background: linear-gradient(to top left, #ffffff, #f0f8ff);
+  border-radius: 14px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  animation: slideUpFade 0.6s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+@keyframes slideUpFade {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== ANIMATION CLASS ========== */
+.bounceIn {
+  animation: bounceIn 0.6s ease-out;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  60% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* ========== DARK MODE OVERRIDES ========== */
+body.sapUiTheme-sap_fiori_3_dark .sapMPage {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+body.sapUiTheme-sap_fiori_3_dark .sapMToggleBtn {
+  background-color: #444 !important;
+  color: #00aeff !important;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05) !important;
+}
+
+body.sapUiTheme-sap_fiori_3_dark .sapMToggleBtn:hover {
+  background-color: #555 !important;
+}
+
+body.sapUiTheme-sap_fiori_3_dark .sapMBtnInner {
+  background-color: #2e2e2e !important;
+  color: #f9f9f9 !important;
+  border-color: #555 !important;
+}
+
+body.sapUiTheme-sap_fiori_3_dark input.sapMInputBaseInner {
+  background-color: #2c2c2c;
+  border-color: #555;
+  color: #ffffff;
+}
+
+body.sapUiTheme-sap_fiori_3_dark input.sapMInputBaseInner:focus {
+  border-color: #00aeff;
+  box-shadow: 0 0 4px rgba(0, 174, 255, 0.4);
+}
+
+body.sapUiTheme-sap_fiori_3_dark .sapMLabel {
+  color: #cccccc !important;
+}
+
+body.sapUiTheme-sap_fiori_3_dark .customCard {
+  background: linear-gradient(to top left, #1f1f1f, #2a2a2a) !important;
+  color: #f5f5f5 !important;
+  border: 1px solid #444 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.sapUiTheme-sap_fiori_3_dark .customCard:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 12px #00aeff, 0 8px 25px rgba(0, 174, 255, 0.3) !important;
+  border: 1px solid #00aeff !important;
+}
+
+body.sapUiTheme-sap_fiori_3_dark .customCard .sapMText,
+body.sapUiTheme-sap_fiori_3_dark .customCard .sapMLabel,
+body.sapUiTheme-sap_fiori_3_dark .customCard .sapMTitle,
+body.sapUiTheme-sap_fiori_3_dark .customCard span,
+body.sapUiTheme-sap_fiori_3_dark .customCard div {
+  color: #ffffff !important;
+}
+
+body.sapUiTheme-sap_fiori_3_dark .sapMObjectListItemTitle {
+  color: #ffffff !important;
+}
+
+body.sapUiTheme-sap_fiori_3_dark .sapMObjectListItemIntro {
+  color: #bbbbbb !important;
+}
+
+.kpiBox {
+    margin: 1rem;
+    gap: 2rem;
+}
+
+.kpiTile {
+    background-color: var(--sapTile_Background);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    align-items: center;
+    width: 150px;
+}
+
+.kpiLabel {
+    font-size: 1rem;
+    color: var(--sapContent_LabelColor);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.kpiValue {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--sapPositiveTextColor);
+    text-align: center;
+}

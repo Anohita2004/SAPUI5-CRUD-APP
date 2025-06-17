@@ -1,0 +1,81 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "LocalCrudApp",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "Local CRUD Application",
+		"description": "Local CRUD Application with SAPUI5"
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "LocalCrudApp.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.120.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+  "config": {
+    "routerClass": "sap.m.routing.Router",
+    "viewType": "XML",
+    "viewPath": "LocalCrudApp.view",
+    "controlId": "app",
+    "controlAggregation": "pages",
+    "async": true
+  },
+  "routes": [
+    {
+      "pattern": "",
+      "name": "main",
+      "target": "main"
+    }
+  ],
+  "targets": {
+    "main": {
+      "viewName": "Main",
+      "viewId": "main"
+    }
+  }
+}
+
+
+	}
+}

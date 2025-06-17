@@ -1,0 +1,99 @@
+<mvc:View
+    controllerName="LocalCrudApp.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    displayBlock="true">
+
+    <Page title="Local CRUD Application">
+        <!-- Theme Toggle -->
+        <headerContent>
+            <ToggleButton
+                text="Bright/Dark"
+                press="onThemeToggle"
+                tooltip="Toggle Light/Dark Theme"/>
+        </headerContent>
+
+        <content>
+
+            <!-- KPI Tiles -->
+            <HBox class="kpiBox" justifyContent="Center">
+                <VBox class="kpiTile">
+                    <Text text="Total Items" class="kpiLabel" />
+                    <Text text="{/itemsCount}" class="kpiValue" />
+                </VBox>
+                <VBox class="kpiTile">
+                    <Text text="Filtered" class="kpiLabel" />
+                    <Text text="{= ${/filteredItems}.length }" class="kpiValue" />
+                </VBox>
+            </HBox>
+
+            <!-- Flex layout for Form + Buttons -->
+            <HBox justifyContent="SpaceBetween" alignItems="Start" class="sapUiMediumMarginTop">
+
+                <!-- LEFT SIDE: Input Fields -->
+                <VBox width="48%" class="inputSection">
+                    <Label text="ID" class="labelSpacing"/>
+                    <Input id="idInput" class="inputSpacing" value="{/id}" width="100%" placeholder="Enter ID" />
+                    <Label text="Name"  class="labelSpacing"/>
+                    <Input id="nameInput" class="inputSpacing" value="{/name}" width="100%" placeholder="Enter Name" />
+                    <Label text="Description" class="labelSpacing"/>
+                    <Input id="descInput" class="inputSpacing" value="{/description}" width="100%" placeholder="Enter Description" />
+                </VBox>
+
+                <!-- RIGHT SIDE: Buttons with Labels -->
+                <VBox width="48%" alignItems="Start" class="buttonSection">
+                    <HBox alignItems="Center" class="sapUiSmallMarginBottom">
+                        <Button icon="sap-icon://add" press="onAdd"/>
+                        <Text text="Add Item" class="sapUiTinyMarginBegin"/>
+                    
+                    
+                        <Button icon="sap-icon://edit" press="onUpdate"/>
+                        <Text text="Update Item" class="sapUiTinyMarginBegin"/>
+                    </HBox>
+                    <HBox alignItems="Center" class="sapUiSmallMarginBottom">
+                        <Button icon="sap-icon://delete" press="onDelete"/>
+                        <Text text="Delete Item" class="sapUiTinyMarginBegin"/>
+                    
+                        <Button icon="sap-icon://undo" press="onUndo"/>
+                        <Text text="Undo Action" class="sapUiTinyMarginBegin"/>
+                    </HBox>
+                    <HBox alignItems="Center">
+                        <Button icon="sap-icon://download" press="onExport"/>
+                        <Text text="Export Items" class="sapUiTinyMarginBegin"/>
+                    </HBox>
+                </VBox>
+            </HBox>
+
+            <!-- Search and Sort -->
+            <HBox class="sapUiMediumMarginTop" justifyContent="SpaceBetween" alignItems="Center">
+                <!-- Search Field -->
+                <SearchField id="searchField"
+                    width="100%"
+                    maxWidth="600px"
+                    placeholder="Search by name or description"
+                    liveChange="onFilter"/>
+
+                <!-- Sort Buttons -->
+                <HBox alignItems="Center">
+                    <Button text="Sort (ASC)" press="onSortAsc" class="sapUiTinyMarginEnd"/>
+                    <Button text="Sort (DESC)" press="onSortDesc"/>
+                </HBox>
+            </HBox>
+
+            <!-- Card List -->
+            <List items="{/filteredItems}" mode="None" class="customCardList sapUiMediumMarginTop">
+                <ObjectListItem
+                    class="customCard"
+                    title="{name}"
+                    number="{id}"
+                    numberState="Success"
+                    intro="{description}"
+                    type="Active"
+                    press="onCardSelect"/>
+            </List>
+
+        </content>
+    </Page>
+</mvc:View>
+
