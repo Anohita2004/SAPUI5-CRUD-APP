@@ -14,7 +14,7 @@
 
 ## 📸 Preview
 
-<img src="https://your-screenshot-link.com/preview.png" width="100%"/>
+![Live App Screenshot](https://github.com/user-attachments/assets/2f13f89e-3b23-4ede-a60e-2ef742b2ebaf)
 
 ---
 
