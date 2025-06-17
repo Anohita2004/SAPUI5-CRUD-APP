@@ -100,7 +100,7 @@ This project mimics real-world enterprise dashboards and showcases:
 
 ---
 # Clone the project
-git clone https://github.com/yourusername/sapui5-crud-app.git
+git clone https://github.com/Anohita2004/SAPUI5-CRUD-APP.git
 
 cd sapui5-crud-app
 
