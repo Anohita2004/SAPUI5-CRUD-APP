@@ -99,6 +99,14 @@ This project mimics real-world enterprise dashboards and showcases:
 - Perfect for resumes, demo portfolios, and SAP internships!
 
 ---
+# Clone the project
+git clone https://github.com/yourusername/sapui5-crud-app.git
+
+cd sapui5-crud-app
+
+# Run with any local static server
+npx http-server webapp
+
 
 ##  About Me
 
