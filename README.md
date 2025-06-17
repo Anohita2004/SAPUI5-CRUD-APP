@@ -1,6 +1,6 @@
 #  SAPUI5 CRUD Application — Responsive & Sleek UI5 Project 
 
-![Banner](https://your-screenshot-link.com/banner.png)
+
 
 >  A dynamic and responsive **SAPUI5 CRUD** (Create, Read, Update, Delete) application built from scratch — designed to showcase **UI/UX elegance**, **flexible architecture**, and **real-world functionality** using **SAP Fiori** principles.
 
